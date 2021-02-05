@@ -7,13 +7,13 @@ import {
   Nav,
   NavItem,
   NavLink,
-  NavbarText
+  
 } from 'reactstrap';
 import UsedApiLink from '../components/UsedApiNavbar'
 import {Link} from 'react-router-dom';
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
-import Trending from '../components/Trending';
-import NowPlaying from '../components/NowPlaying';
+// import {BrowserRouter, Route, Switch} from 'react-router-dom'
+// import Trending from '../components/Trending';
+// import NowPlaying from '../components/NowPlaying';
 
 
 const NavBar = (props) => {

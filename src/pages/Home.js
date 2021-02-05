@@ -3,7 +3,7 @@ import axios from 'axios'
 import { BASE_URL, API_KEY } from '../config'
 import MovieCard from '../components/MovieCard';
 import GenreCard from '../components/GenreCard';
-import CompanyCard from '../components/CompanyCard';
+// import CompanyCard from '../components/CompanyCard';
 import CarouselSlider from '../components/CarouselSlider';
 const Home = () => {
 
