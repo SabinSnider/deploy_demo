@@ -24,3 +24,4 @@ function App() {
 }
 
 export default App;
+// vscode://vscode.github-authentication/did-authenticate?windowid=1&code=cdc9f329325708016561&state=635ef89a-8b7a-48b5-a7e3-fcbcc328e96a 
