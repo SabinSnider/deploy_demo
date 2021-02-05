@@ -4,26 +4,32 @@ import {
   CardTitle, CardSubtitle, Button, Badge
 } from 'reactstrap';
 import { IMAGE_BASE_URL } from '../config';
+import {Link} from 'react-router-dom';
 
-const MovieCard = ({movie}) => {
-  return (
+const MovieCard = ({moviey}) => {     
+
+  return (<div>
+  <Link key={moviey.id} to={`/nowplaying/${moviey.id}`}>{moviey.title}
     <Card className="mt-2">
-        <CardImg top width="100%" src={`${IMAGE_BASE_URL}${movie.poster_path}`} alt="Card image cap" />
+        <CardImg top width="100%" src={`${IMAGE_BASE_URL}${moviey.poster_path}`} alt="Card image cap" />
         <CardBody>
-          <CardTitle tag="h5">{movie.title}</CardTitle>
+          <CardTitle tag="h5">{moviey.title}</CardTitle>
           <CardSubtitle tag="h6" className="mb-2 text-muted">
           <div>
-            Vote Count : { movie.vote_count}
+            Vote Count : { moviey.vote_count}
             </div>
           <div>
-            Popularity : { movie.popularity}
+            Popularity : { moviey.popularity}
             </div>
           </CardSubtitle>
       <div>
-        {movie.adult && <Badge color="info">Adult</Badge>}
+        {moviey.adult && <Badge color="info">Adult</Badge>}
       </div>
       </CardBody>
       </Card>
+  </Link>
+   
+      </div>
   )
 }
 
