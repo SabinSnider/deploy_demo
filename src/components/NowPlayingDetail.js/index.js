@@ -7,7 +7,7 @@ function NowPlayingDetails({ match }) {
 
   React.useEffect(() => {
     fetchItem();
-  }, []);
+  });
 
   const fetchItem = async () => {
     const res = await axios.get(`${BASE_URL}/movie/${match.params.id}`, {
